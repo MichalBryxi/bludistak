@@ -6,4 +6,4 @@ iffin prvni commit
 
 Vývojář | github jméno | e-mail
 ------- | ------------ | ------
- Ivana Kozlová | iff11 | ivanakozlova@gmail.com
+ Tomas Filipek | maniac1234 | maniac1234@gmail.com
