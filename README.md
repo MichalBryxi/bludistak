@@ -2,7 +2,7 @@ bludistak
 =========
 
 Projekt pro skladování bludišťáků
-iffin prvni commit
+maniac vubec nevi o co jde
 
 Vývojář | github jméno | e-mail
 ------- | ------------ | ------
