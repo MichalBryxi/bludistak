@@ -1,4 +1,4 @@
-bludistak
+bludistak je na pikacu
 =========
 
 Projekt pro skladování bludišťáků
