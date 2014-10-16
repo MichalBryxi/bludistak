@@ -1,5 +1,6 @@
-bludistak jede po kolejiCH a je prima
-=========
+
+bludistak
+============
 
 Projekt pro skladování bludišťáků
 maniac vubec nevi o co jde
