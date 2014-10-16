@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 bludistak je na pikacu
+=======
+bludistak je prima
+>>>>>>> upstream/master
 =========
 
 Projekt pro skladování bludišťáků
