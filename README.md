@@ -1,4 +1,4 @@
-bludistak
+bludistak jede po kolejiCH
 =========
 
 Projekt pro skladování bludišťáků
