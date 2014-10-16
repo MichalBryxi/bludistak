@@ -1,4 +1,4 @@
-bludistak
+bludistak je prima
 =========
 
 Projekt pro skladování bludišťáků
