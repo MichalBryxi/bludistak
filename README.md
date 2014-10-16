@@ -1,4 +1,4 @@
-bludistak je prima
+bludistak jede po kolejiCH a je prima
 =========
 
 Projekt pro skladování bludišťáků
