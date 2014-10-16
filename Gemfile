@@ -8,7 +8,7 @@ gem 'sqlite3'
 #aplikace s obrazkama
 gem 'carrierwave'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+#gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -27,6 +27,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+
+#tohle sem davam pac to psali v readme, ale netusim co to znamena
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'sass-rails', '>= 3.2'
+gem 'autoprefixer-rails'
+#-----------------------------------------------------------------
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
