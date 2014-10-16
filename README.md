@@ -1,4 +1,4 @@
-bludistak jede po kolejiCH
+bludistak jede po kolejiCH a je prima
 =========
 
 Projekt pro skladování bludišťáků
