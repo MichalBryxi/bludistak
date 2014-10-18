@@ -103,7 +103,8 @@ a:hover {
 **********************************************************************/
 #head {
   background: #f4f4f4 url(public/assets/images/bludistak.jpg) top center;
-  background-size: cover;
+  background-size: cover;_heads
+  
   color: #7C7C7C;
   padding: 30px 0 35px 0;
 }
