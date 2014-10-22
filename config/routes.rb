@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :worms
+
   resources :projects
 
   resources :ideas
