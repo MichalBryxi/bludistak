@@ -1,6 +1,6 @@
 <h1>Listing worms</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -15,7 +15,7 @@
       <tr>
         <td><%= worm.name %></td>
         <td><%= worm.description %></td>
-        <td><%= worm.project_id=int %></td>
+        <td><%= worm.project.name if worm.project %></td>
         <td><%= link_to 'Show', worm %></td>
         <td><%= link_to 'Edit', edit_worm_path(worm) %></td>
         <td><%= link_to 'Destroy', worm, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -17,6 +17,11 @@
         <td><%= project.name %></td>
         <td><%= project.description %></td>
         <td><%= project.active %></td>
+        <td>
+          <% project.worms.each do |worm| %>
+          <%= worm.name %>
+          <% end %>
+        </td>
         <td><%= link_to '', project, class: "glyphicon glyphicon-folder-open" %></td>
         <td><%= link_to '', edit_project_path(project), class: "glyphicon glyphicon-pencil" %></td>
         <td><%= link_to '', project, method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-trash" %></td>
