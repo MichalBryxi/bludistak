@@ -11,7 +11,9 @@ en:
     error_notification:
       default_message: "Please review the problems below:"
     # Labels and hints examples
-    # labels:
+    labels:
+      worms:
+        name: "Meno"
     #   defaults:
     #     password: 'Password'
     #   user:
