@@ -3,7 +3,7 @@ class CreateWorms < ActiveRecord::Migration
     create_table :worms do |t|
       t.string :name
       t.text :description
-      t.string :project_id=int
+      t.string :project_id, :int
 
       t.timestamps
     end
