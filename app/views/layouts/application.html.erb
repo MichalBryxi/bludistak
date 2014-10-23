@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Railsgirls</title>
+  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
+<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -20,11 +22,9 @@
 <div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
-<<<<<<< HEAD
           <li class="active"><%= link_to 'Home', @idea %></li>
 					<li><%= link_to 'New Idea', new_idea_path %></li>
 					<li><a href="about.html">About</a></li>
->>>>>>> upstream/master
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
 						<ul class="dropdown-menu">
