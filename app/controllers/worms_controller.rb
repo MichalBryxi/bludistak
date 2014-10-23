@@ -69,6 +69,6 @@ class WormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def worm_params
-      params.require(:worm).permit(:name, :description, :project_id=int)
+      params.require(:worm).permit(:name, :description, :project_id)
     end
 end
