@@ -22,6 +22,7 @@
 <div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
+          <li><%= current_user.name if current_user %></li>
           <li><%= link_to "FB", user_omniauth_authorize_path(:facebook) %></li>
           <li><%= link_to "TW", user_omniauth_authorize_path(:twitter) %></li>
           <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
