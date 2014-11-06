@@ -22,6 +22,9 @@
 <div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
+          <li><%= link_to "FB", user_omniauth_authorize_path(:facebook) %></li>
+          <li><%= link_to "TW", user_omniauth_authorize_path(:twitter) %></li>
+          <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
           <li class="active"><%= link_to 'Home', @idea %></li>
 					<li><%= link_to 'New Idea', new_idea_path %></li>
 					<li><a href="about.html">About</a></li>

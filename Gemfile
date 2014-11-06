@@ -52,9 +52,15 @@ group :development do
   # better errors
   gem "better_errors"
   gem "binding_of_caller"
+  gem "dotenv-rails"
 end
 
 group :production do
   gem 'pg'
 end
 
+# SSO
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
