@@ -18,29 +18,8 @@
 			<a href="">anthony.russel42@example.com</a></span>
 		</h1>
 	</div>
-  
-<div class="navbar-collapse collapse">
-				
-				<ul class="nav navbar-nav">
-          <li><%= current_user.name if current_user %></li>
-          <li><%= link_to "FB", user_omniauth_authorize_path(:facebook) %></li>
-          <li><%= link_to "TW", user_omniauth_authorize_path(:twitter) %></li>
-          <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
-          <li class="active"><%= link_to 'Home', @idea %></li>
-					<li><%= link_to 'New Idea', new_idea_path %></li>
-					<li><a href="about.html">About</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.html">Left Sidebar</a></li>
-							<li><a href="sidebar-right.html">Right Sidebar</a></li>
-							<li><a href="single.html">Blog Post</a></li>
-						</ul>
-					</li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-			
-			</div>
+    <!-- zavolam menu ktere mam v samostatnem souboru -->
+    <%= render 'layouts/menu' %>
 	</nav>
 </header>
   
@@ -72,6 +51,7 @@
 				<h3 class="widget-title">Follow me</h3>
 				<div class="widget-body">
 					<p class="follow-me-icons">
+            <a href="https://twitter.com/iff_11">iff_11</a>
 						<a href=""><i class="fa fa-twitter fa-2"></i></a>
 						<a href=""><i class="fa fa-dribbble fa-2"></i></a>
 						<a href=""><i class="fa fa-github fa-2"></i></a>
@@ -103,6 +83,5 @@
 	</div>
 </footer>  
   
-<script src="//railsgirls.com/assets/bootstrap.js"></script>
 </body>
 </html>
