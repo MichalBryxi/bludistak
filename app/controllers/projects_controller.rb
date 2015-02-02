@@ -6,7 +6,6 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
   end
-
   # GET /projects/1
   # GET /projects/1.json
   def show
