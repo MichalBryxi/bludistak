@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   resources :ideas
   
+  get '/home' => 'pages#home', as: 'home'
+  get '/about', to: 'pages#about', as: 'about'
+  
   #resources :home
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -16,6 +19,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root "pages#home"
+  
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
