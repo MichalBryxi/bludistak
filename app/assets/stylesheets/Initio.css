@@ -749,7 +749,8 @@ footer.entry-meta .meta-in {
 
 
 **********************************************************************/
-#footer {
+
+/*#footer {
   background: #232323;
   padding: 30px 0 0 0;
   font-size: 12px;
@@ -782,7 +783,7 @@ footer.entry-meta .meta-in {
 }
 #underfooter p {
   margin: 0;
-}
+}*/
 .follow-me-icons {
   font-size: 30px;
 }
