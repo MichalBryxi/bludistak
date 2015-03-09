@@ -30,6 +30,26 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 125px;
+  height: 160px;
   background-color: #cdf3f6;
+}
+h2{
+    margin: 0;     
+    
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+    padding: 160px;
+  color: #00FF7F;
+}
+.bs-example{
+	margin: 20px;
 }
