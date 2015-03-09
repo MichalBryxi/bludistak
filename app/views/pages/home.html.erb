@@ -43,14 +43,14 @@ h2{
                 <h2>Začni hned!</h2>
                 <div class="carousel-caption">
                   <h3>Login</h3>
-                  <p>Pro přihlášení do aplikace použij přihlášení v menu.</p>
+                  <p>Vstup do aplikace je zdarma. Stačí se přihlásit přes <%= link_to "Facebook", user_omniauth_authorize_path(:facebook) %>, nebo <%= link_to "Twitter", user_omniauth_authorize_path(:twitter) %></p>
                 </div>
             </div>
             <div class="item">
-                <h2>Blidišťákuj!</h2>
+                <h2>Bludišťákuj!</h2>
                 <div class="carousel-caption">
                   <h3>Worms</h3>
-                  <p>Tady můžeš vesele rozdávat bludištáky ...</p>
+                  <p>Naštval tě někdo? Udělal ti radost? Chceš ho prostě patřičně ohodnotit? Prostě mu  <%= link_to 'dej bludišťákas', new_worm_path %>. </p>
                 </div>
             </div>
             <div class="item">
