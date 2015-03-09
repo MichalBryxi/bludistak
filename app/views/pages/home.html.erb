@@ -23,7 +23,7 @@
                     <% if user_signed_in? %>
                       Prostě mu  <%= link_to 'dej bludišťákas', new_worm_path %>.
                     <% else %>
-                      To Do: Login page
+                      <%= link_to 'Login', '/login' %>
                     <% end %>
                 </div>
             </div>
