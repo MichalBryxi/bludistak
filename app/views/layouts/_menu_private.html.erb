@@ -6,11 +6,10 @@
           <li></li>
           <li></li>
           <li></li>
-    <li class="active"><%= link_to 'Home', "/home" %></li>
-					<li><%= link_to 'New Idea', new_idea_path %></li>
-          <li><%= link_to 'About' , about_path %></li>
-					<li><%= link_to 'Worms', worms_path %></li>
-          <li><%= link_to 'Projects' , projects_path %></li>
+    <li class="active"><%= link_to t('Home'), "/home" %></li>
+          <li><%= link_to t('About') , about_path %></li>
+					<li><%= link_to t('Worms'), worms_path %></li>
+          <li><%= link_to t('Projects') , projects_path %></li>
 					<li class="dropdown">
             <% if user_signed_in? %>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <%= current_user.name %> <b class="caret"></b></a>
@@ -19,7 +18,7 @@
             <% end %>
 						<ul class="dropdown-menu">
               <% if user_signed_in? %>
-                <li><%= link_to "Odhlásit", destroy_user_session_path, method: :delete %></li>
+                <li><%= link_to t("Logout"), destroy_user_session_path, method: :delete %></li>
               <% else %>       
                 <li><%= link_to "Facebook", user_omniauth_authorize_path(:facebook) %></li>
                 <li><%= link_to "Twitter", user_omniauth_authorize_path(:twitter) %></li>
