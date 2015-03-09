@@ -14,9 +14,9 @@ class ApplicationController < ActionController::Base
 
     # Redirect to the 'finish_signup' page if the user
     # email hasn't been verified yet
-    if current_user && !current_user.email_verified?
-      redirect_to finish_signup_path(current_user)
-    end
+    #if current_user && !current_user.email_verified?
+    #  redirect_to finish_signup_path(current_user)
+    #end
   end
   
   private
