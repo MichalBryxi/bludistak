@@ -188,12 +188,15 @@ a:hover {
 .navbar-collapse .navbar-nav {
   float: none;
   margin: 0 auto;
-  text-align: center;
+  margin-left: 2em;
+  text-align: left;
 }
+/*
 .navbar-collapse .navbar-nav > li {
   float: none;
   display: inline-block;
 }
+*/
 .navbar-collapse .navbar-nav > li > a {
   padding: 20px 30px;
 }
