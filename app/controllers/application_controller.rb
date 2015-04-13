@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
     if user_signed_in?
       return true
     else 
-      redirect_to '/pages/login'
+      redirect_to controller: 'pages', action: 'login'
     end 
   end
   
