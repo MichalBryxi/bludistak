@@ -1,5 +1,4 @@
-class ApplicationController < ActionController::Base
-  
+class ApplicationController < ActionController::Base 
   layout :determine_layout
   
   # Prevent CSRF attacks by raising an exception.
@@ -17,6 +16,14 @@ class ApplicationController < ActionController::Base
     #if current_user && !current_user.email_verified?
     #  redirect_to finish_signup_path(current_user)
     #end
+  end
+  
+  def force_login
+    if user_signed_in?
+      return true
+    else 
+      redirect_to controller: 'pages', action: 'login'
+    end 
   end
   
   private

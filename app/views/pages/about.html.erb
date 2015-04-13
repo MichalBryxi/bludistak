@@ -9,11 +9,7 @@
 
 <p>S tímto účelem byla vytvořena aplikace bludišťák, která umožňuje přihlášenému uživateli "dát bludišťáka" a tím ohodnotit jiného uživatele.</p>
 
-                    <% if user_signed_in? %>
-         Prostě mu  <%= link_to 'New Worm', pages_login_path %>.
-                    <% else %>
-                      <%= link_to 'Login', '/login' %>
-                    <% end %>
+         <%= link_to 'New Worm', new_worm_path, {class: "btn btn-warning btn-lg", role:"button"} %>
          
         </div>
 

@@ -20,11 +20,7 @@
                 <div class="carousel-caption">
                   <h3>Worms</h3>
                   <p>Naštval tě někdo? Udělal ti radost? Chceš ho prostě patřičně ohodnotit? </p>
-                    <% if user_signed_in? %>
                       Prostě mu  <%= link_to 'dej bludišťáka', new_worm_path %>.
-                    <% else %>
-                      <%= link_to 'Login', '/login' %>
-                    <% end %>
                 </div>
             </div>
             <div class="item">

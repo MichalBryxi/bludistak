@@ -1,5 +1,6 @@
 class WormsController < ApplicationController
   before_action :set_worm, only: [:show, :edit, :update, :destroy]
+  before_action :force_login
 
   # GET /worms
   # GET /worms.json
