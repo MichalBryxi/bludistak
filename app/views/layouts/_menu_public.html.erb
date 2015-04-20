@@ -6,8 +6,8 @@
           <li></li>
           <li></li>
           <li></li>
-    <li class="active"><%= link_to t('Home'), "/home" %></li>
-    <li class="active"><%= link_to t('About'), "/about" %></li>
+    <li><%= active_link_to t('Home'), "/home" %></li>
+    <li><%= active_link_to t('About'), "/about" %></li>
 					<li class="dropdown">
             <% if user_signed_in? %>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <%= current_user.name %> <b class="caret"></b></a>
