@@ -1,3 +1,4 @@
+<!-- _menu_private -->
 <nav class="navbar navbar-default">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -11,9 +12,7 @@
      <a class="navbar-brand" href="home">
        <%= image_tag "brandbludistak.jpg" %>
       </a>
- <a class="navbar-brand logotextik" href="home">
-   Bluďišťák
-   </a>
+      <%= link_to t('Bluďišťák') , projects_path , class: "navbar-brand logotextik"%>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
