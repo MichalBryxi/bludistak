@@ -16,6 +16,7 @@
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+$footer-height: 160px;
 
 html {
   position: relative;
@@ -23,14 +24,14 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 125px;
+  margin-bottom: $footer-height;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 160px;
+  height: $footer-height;
   background-color: #cdf3f6;
 }
 
