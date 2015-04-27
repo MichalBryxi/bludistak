@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   resources :worms
 
   resources :projects
-
-  resources :ideas
   
   get '/home' => 'pages#home', as: 'home'
   get '/about', to: 'pages#about', as: 'about'
