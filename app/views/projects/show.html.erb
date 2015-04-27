@@ -15,5 +15,10 @@
   <%= @project.active %>
 </p>
 
+<p>
+  <strong>Obrázek projektu</strong>
+  <%= image_tag @project.image_url %>
+</p>
+
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
