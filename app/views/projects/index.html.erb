@@ -1,5 +1,33 @@
-<h1>Seznam projektů</h1>
-  <table class="table table-striped">
+<h1>Seznam projektů</h1> 
+
+ <% @projects.each do |project| %>
+ 
+        <div class="item  col-xs-4 col-lg-4">
+          <%= image_tag project.image_url %>
+            <div class="thumbnail">
+               
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        a<%= project.name %></h4>
+                    <p class="group inner list-group-item-text">
+                        <%= project.description %></p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000<%= project.name %></p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+ <% end %>
+
+
+ <table class="table table-striped">
   <thead>
     <tr>
       <th>Name</th>
