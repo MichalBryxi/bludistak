@@ -90,7 +90,7 @@ a:hover {
 .size-full,
 .size-large,
 .size-medium,
-.size-thumbnail {
+.size-nail {
   max-width: 100%;
   height: auto;
 }
@@ -457,12 +457,7 @@ img {
   background: #bd1550;
   color: white;
 }
-.thumbnail img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 .thumbnail:hover {
   color: #333;
   text-decoration: none;
