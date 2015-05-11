@@ -1,30 +1,28 @@
 
-<div class="navbar-collapse collapse">
-				
-  <ul class="nav navbar-nav">
-          <li><%= current_user.name if current_user %></li>
-          <li></li>
-          <li></li>
-          <li></li>
-    <li><%= active_link_to t('Home'), "/home" %></li>
-    <li><%= active_link_to t('About'), "/about" %></li>
-					<li class="dropdown">
+<nav class="navbar navbar-default">
+  <div class="container-fluid container">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        <li><%= active_link_to t('Home'), "/home" %></li>
+        <li><%= active_link_to t('About'), "/about" %></li>
+        <li class="dropdown">
+          <% if user_signed_in? %>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <%= current_user.name %> <b class="caret"></b></a>
+          <% else %>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Přihlásit <b class="caret"></b></a>
+          <% end %>
+          <ul class="dropdown-menu">
             <% if user_signed_in? %>
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <%= current_user.name %> <b class="caret"></b></a>
-            <% else %>
-             	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Přihlásit <b class="caret"></b></a>
-            <% end %>
-						<ul class="dropdown-menu">
-              <% if user_signed_in? %>
-                <li><%= link_to t("Logout"), destroy_user_session_path, method: :delete %></li>
-              <% else %>       
-                <li><%= link_to "Facebook", user_omniauth_authorize_path(:facebook) %></li>
-                <li><%= link_to "Twitter", user_omniauth_authorize_path(:twitter) %></li>    
-              <% end %>      
-						</ul>
-					</li>
-					<li></li>
-				</ul>
-			
-</div>
+            <li><%= link_to t("Logout"), destroy_user_session_path, method: :delete %></li>
+            <% else %>       
+            <li><%= link_to "Facebook", user_omniauth_authorize_path(:facebook) %></li>
+            <li><%= link_to "Twitter", user_omniauth_authorize_path(:twitter) %></li>    
+            <% end %>      
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>		
+</nav>
 
