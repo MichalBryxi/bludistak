@@ -1,22 +1,28 @@
-en:
+cs:
   simple_form:
     "yes": 'Yes'
     "no": 'No'
     required:
-      text: 'requppppired'
+      text: 'Povinné pole'
       mark: '*'
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.
-      # html: '<abbr title="required">*</abbr>'
+      html: '<abbr title="povinné pole">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
     # Labels and hints examples
     labels:
-      worms:
-        name: "Meno"
+      project:
+        name: "Jméno"
+        description: "Popis"
+        active: 'Je projekt aktivní'
+        worms: 'Bludišťáci'
+        image_url: 'URL obrázku'
     placeholders:
       project:
-        name: 'Name of projects'
+        name: 'Parta zlobilů'
+        description: 'Parta zlobilů je uskupení neskutečně zlobivé party'
+        image_url: 'http://www.casopisnezbeda.cz/nezbeda-roku.jpg'
     #   defaults:
     #     password: 'Password'
     #   user:
