@@ -1,21 +1,14 @@
+ <!-- _form --> 
 <%= simple_form_for(@project) do |f| %>
   <%= f.error_notification %>
 
-<span class="glyphicon glyphicon-search"></span>
-
-
-
-
-
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.input :active %>
-    <%= f.association :worms %>
-    <%= f.input :image_url %>
+    <%= f.input :name , input_html: { class: 'form-control' } %>
+    <%= f.input :description , input_html: { class: 'form-control' } %>
+    <%= f.input :active , input_html: { class: 'form-control' }%>
+    <%= f.association :worms , input_html: { class: 'form-control' }%>
+    <%= f.input :image_url , input_html: { class: 'form-control' }%>
   </div>
-    
-
 
   <div class="form-actions">
     <%= f.button :submit %>
