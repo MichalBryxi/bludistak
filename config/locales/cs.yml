@@ -1,9 +1,21 @@
 cs:
   copyright: copyright
-  back: zpět
-  show: ukaž
+  Back: Zpět
+  Show: Ukaž
   Home: Domů
+  Edit: Upravit
   About: O nás
   Worms: Bluďišťáci
   Projects: Projekty
   Logout: Odhlásit
+  New Project: Nový projekt
+  projects:
+    edit:
+      Editing project: Upravit projekt
+    new:
+      New project: Nový projekt
+  helpers:
+    submit:
+      project:
+        create: 'Vytvořit projekt'
+        update: 'Upravit projekt'
