@@ -1,4 +1,5 @@
 cs:
+  
   simple_form:
     "yes": 'Yes'
     "no": 'No'
@@ -23,6 +24,7 @@ cs:
         name: 'Parta zlobilů'
         description: 'Parta zlobilů je uskupení neskutečně zlobivé party'
         image_url: 'http://www.casopisnezbeda.cz/nezbeda-roku.jpg'
+
     #   defaults:
     #     password: 'Password'
     #   user:

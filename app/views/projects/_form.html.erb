@@ -1,16 +1,16 @@
  <!-- _form --> 
 <%= simple_form_for(@project) do |f| %>
   <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :name , input_html: { class: 'form-control' } %>
-    <%= f.input :description , input_html: { class: 'form-control' } %>
-    <%= f.input :active , input_html: { class: 'form-control' }%>
-    <%= f.association :worms , input_html: { class: 'form-control' }%>
-    <%= f.input :image_url , input_html: { class: 'form-control' }%>
-  </div>
-
-  <div class="form-actions">
+<div class="form-inputs">
+  <%= f.input :name , input_html: { class: 'form-control' } %>
+  <%= f.input :description , input_html: { class: 'form-control' } %>
+  <%= f.input :active , input_html: { class: 'checkbox' }%>
+  <%= f.association :worms , input_html: { class: 'form-control' }%>
+  <%= f.input :image_url , input_html: { class: 'form-control' }%>
+</div>
+  
+<hr />
+  <div class="form-actions pull-right">
     <%= f.button :submit %>
   </div>
 <% end %>
