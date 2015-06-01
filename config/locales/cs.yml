@@ -10,6 +10,11 @@ cs:
   Projects: Projekty
   Logout: Odhlásit
   New Project: Nový projekt
+  layouts:
+    _footer:
+      Follow me: Sleduj mě
+      Contact: Kontakt
+      Twitter account: Twitter profil 
   projects:
     edit:
       Editing project: Upravit projekt
