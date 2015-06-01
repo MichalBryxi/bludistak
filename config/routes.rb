@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   
   get '/home' => 'pages#home', as: 'home'
   get '/about', to: 'pages#about', as: 'about'
+  get '/help', to: 'pages#help', as: 'help'
   get '/login', to: 'pages#login', as: 'login'
   
   #resources :home
