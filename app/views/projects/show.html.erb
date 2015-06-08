@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <strong class="pull-right">Bludišťáci</strong>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @project.name %>
@@ -19,6 +21,7 @@
   <strong>Obrázek projektu</strong>
   <%= image_tag @project.image_url %>
 </p>
+
 <div class="btn-group">
 <%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>
 <%= link_to t('Back'), projects_path , {class: "btn btn-primary", role:"button"}  %>
