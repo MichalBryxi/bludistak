@@ -15,5 +15,7 @@
   <%= @worm.project_id %>
 </p>
 
-<%= link_to 'Edit', edit_worm_path(@worm) %> |
-<%= link_to 'Back', worms_path %>
+<div class="btn-group">
+<%= link_to t('Edit'), edit_worm_path(@worm) , {class: "btn btn-primary", role:"button"}%>
+<%= link_to t('Back'), worms_path , {class: "btn btn-primary", role:"button"}%>
+</div>

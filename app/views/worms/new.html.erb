@@ -1,5 +1,5 @@
-<h1>New worm</h1>
+<h1><%= t('worms.new.New worm')%></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', worms_path %>
+<%= link_to t('Back'), worms_path , {class: "btn btn-primary", role:"button"}%>

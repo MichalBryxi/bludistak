@@ -1,8 +1,8 @@
-<h1>Editing worm</h1>
-
-<%= t 'hello' %>
+<h1><%= t('worms.edit.Editing worm')%></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @worm %> |
-<%= link_to 'Back', worms_path %>
+<div class="btn-group">
+  <%= link_to t('Show'), @worm , {class: "btn btn-primary", role:"button"}%>
+  <%= link_to t('Back'), worms_path , {class: "btn btn-primary", role:"button"}%>
+</div>
