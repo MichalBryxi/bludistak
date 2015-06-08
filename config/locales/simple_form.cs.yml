@@ -19,11 +19,21 @@ cs:
         active: 'Je projekt aktivní'
         worms: 'Bludišťáci'
         image_url: 'URL obrázku'
+      worm:
+        name: "Jméno"
+        description: "Popis"
+        active: 'Je projekt aktivní'
+        worms: 'Bludišťáci'
+        image_url: 'URL obrázku'
+        project: 'Projekt'
     placeholders:
       project:
         name: 'Parta zlobilů'
         description: 'Parta zlobilů je uskupení neskutečně zlobivé party'
         image_url: 'http://www.casopisnezbeda.cz/nezbeda-roku.jpg'
+      worm:
+        name: 'Zlatý bludišťák'
+        description: 'Tento bludišťák se uděluje ve velmi vyjímečných případech'
 
     #   defaults:
     #     password: 'Password'

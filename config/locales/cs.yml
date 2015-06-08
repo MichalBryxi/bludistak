@@ -20,8 +20,16 @@ cs:
       Editing project: Upravit projekt
     new:
       New project: Nový projekt
+  worms:
+    edit:
+      Editing worm: Upravit bludišťáka
+    new:
+      New worm: Nový bludišťák
   helpers:
     submit:
       project:
         create: 'Vytvořit projekt'
         update: 'Upravit projekt'
+      worm:
+        create: 'Vytvořit bludišťáka'
+        update: 'Upravit bludišťáka'
