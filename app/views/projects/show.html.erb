@@ -1,30 +1,38 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <strong class="pull-right">Bludišťáci</strong>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-<!--
-<p>
-  <strong>Active:</strong>
-  <%= @project.active %>
-</p>
--->
-<p>
-  <strong>Obrázek projektu</strong>
-  <%= image_tag @project.image_url %>
-</p>
+<div class="row">
+  <div class="col-md-4">
+    <p>
+      <strong>Name:</strong>
+      <%= @project.name %>
+    </p>
 
+    <p>
+      <strong>Description:</strong>
+      <%= @project.description %>
+    </p>
+    <!--
+    <p>
+      <strong>Active:</strong>
+      <%= @project.active %>
+    </p>
+    -->
+    <p>
+      <strong>Obrázek projektu:</strong>
+      <%= image_tag @project.image_url %>
+    </p>
+  </div>
+  <div class="col-md-8">
+      <strong>Bludišťáci</strong> 
+      <% @project.worms.each do |worm|%>
+      <%= worm.name %>
+    <% end %>
+  </div>
+</div>
+  
 <div class="btn-group">
   <%= link_to  projects_path, class: "glyphicon glyphicon-circle-arrow-left btn btn-primary" do %>
           <%= t('Back') %>
   <% end %>
-<!--<%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>-->
+<%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>
 </div>
