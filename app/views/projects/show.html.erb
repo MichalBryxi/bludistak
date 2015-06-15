@@ -11,18 +11,20 @@
   <strong>Description:</strong>
   <%= @project.description %>
 </p>
-
+<!--
 <p>
   <strong>Active:</strong>
   <%= @project.active %>
 </p>
-
+-->
 <p>
   <strong>Obrázek projektu</strong>
   <%= image_tag @project.image_url %>
 </p>
 
 <div class="btn-group">
-<%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>
-<%= link_to t('Back'), projects_path , {class: "btn btn-primary", role:"button"}  %>
+  <%= link_to  projects_path, class: "glyphicon glyphicon-circle-arrow-left btn btn-primary" do %>
+          <%= t('Back') %>
+  <% end %>
+<!--<%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>-->
 </div>
