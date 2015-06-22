@@ -23,10 +23,13 @@
     </p>
   </div>
   <div class="col-md-8">
-      <strong>Bludišťáci</strong> 
+    <li class="list-group-item active">Bludišťáci:</li> 
+      <ul class="list-group">
       <% @project.worms.each do |worm|%>
-      <%= worm.name %>
-    <% end %>
+        <li class="list-group-item"><%= worm.name %></li>
+        
+      <% end %>
+    </ul>
   </div>
 </div>
   
@@ -34,5 +37,5 @@
   <%= link_to  projects_path, class: "glyphicon glyphicon-circle-arrow-left btn btn-primary" do %>
           <%= t('Back') %>
   <% end %>
-<%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>
+<!--<%= link_to t('Edit'), edit_project_path(@project) , {class: "btn btn-primary", role:"button"}  %>-->
 </div>
