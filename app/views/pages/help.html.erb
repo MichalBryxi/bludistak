@@ -1,51 +1,83 @@
 
  <div class="jumbotron">
       
-       <div class="container">
-
-            <h2><b class="glyphicon glyphicon-edit"></b>  Co?</h2>
-
-            <p>Tady jednou neco bude.</p>
-
-<p>Ale zatim tu nic neni.</p>
-
-         <%= link_to 'New Worm', new_worm_path, {class: "btn btn-warning btn-lg", role:"button"} %>
-         
-        </div>
-
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          O projektu, jak to funguje?
+        </a>
+      </h4>
     </div>
-
-    <div class="jumbotron">
-
-        <div class="container">
-
-            <h2><b class="glyphicon glyphicon-user"></b>  Kdo?</h2>
-
-            <p>Banda líných povalečů, věčně bez domácích úkolů, kteří by sami měli dostat zlatý bludišťáky ...</p>
-
-          <p>
-              <a href="https://twitter.com/iff_11" class="btn btn-warning btn-lg" role="button">iff</a>
-              <a href="https://twitter.com/MichalBryxi" class="btn btn-warning btn-lg" role="button">Michal</a>
-              <a href="https://twitter.com/maniac1234" class="btn btn-warning btn-lg" role="button">Maniac</a>
-          </p>
-
-        </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+         Aplikace bludišťák umožňuje přihlášenému uživateli "dát bludišťáka" a tím ohodnotit jiného uživatele a jeho projekt. Pokud už si přihlášený tak můžeš začít udělovat bludišťáky hned:
+        <p></p>
+        <%= link_to 'New Worm', new_worm_path, {class: "btn btn-warning btn-lg", role:"button"} %>
+        <p></p>
+        Pokud ještě přihlášený nejsi,tak šup klik sem a přihlaš se.
+        <p></p>
+       <%= link_to 'Facebook', user_omniauth_authorize_path(:facebook), {class: "btn btn-primary btn-lg", role:"button"} %>
+      <%= link_to 'Twitter', user_omniauth_authorize_path(:twitter), {class: "btn btn-info btn-lg", role:"button"} %>
+         <p></p>
+        Po přihlášení můžeš ne jenom udílet bludišťky, ale taky si můžeš vytvoři svůj projekt a bludišťáky začít sbírat. Tak kdo jich bude mít nejvíc?
+      </div>
+    </div>
+  </div>
       
-    </div>
 
-    <div class="jumbotron">
+        <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a data="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Kdo jsou povaleči?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+       Vrchní povaleč a vysvětlovač:
+              <a href="https://twitter.com/MichalBryxi" class="btn btn-primary btn-lg" role="button">Michal</a>
+              <p></p>
+       Sekundanti:      
+              <a href="https://twitter.com/iff_11" class="btn btn-primary btn-lg" role="button">iff</a>
+              <a href="https://twitter.com/maniac1234" class="btn btn-primary btn-lg" role="button">Maniac</a>
+              <a href="https://www.facebook.com/katerina.labajova" class="btn btn-primary btn-lg" role="button">Káťa</a>
+      </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Proč to všechno?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+          <p>Protože v dnešní době začíná platit víc než kdy jindy že, kolik jazyků umíš, tolikrát si člověkem.<p>
+      </div>
+    </div>
+  </div>
+     
+        <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Kde nás najdete v plné práci?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+          <p>Každé podnělí od 16:00 v Akademickém centru Íčko<p>
+          <p><a href="https://www.facebook.com/kavarnaicko" class="btn btn-info btn-lg" role="button">Íčko</a></p>
+          <p>Dům digitálních dovedností, Plzeň</p>
+         <p><a href="http://www.dddplzen.eu/" class="btn btn-info btn-lg" role="button">DDD</a></p>
+      </div>
+    </div>
+  </div>
+ 
       
-       <div class="container">
-
-         <h2><b class="glyphicon glyphicon-globe"></b>  Kde?</h2>
-
-            <p>Dům digitálních dovedností, Plzeň</p>
-
-          <p><a href="http://www.dddplzen.eu/" class="btn btn-warning btn-lg" role="button">DDD</a></p>
-
-        </div>
-
-    </div>
-
-
-
